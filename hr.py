@@ -8,12 +8,7 @@ def main():
 
     #  Connect to the database
     load_dotenv()
-    print(os.getenv("USERNAME"))
-    print(os.getenv("PASS"))
-    print(os.getenv("DATABASE"))
-    print(os.getenv("HOST"))
-    print(os.getenv("PORT"))
-    
+
     cxn = mariadb.connect(user=os.getenv("USERNAME"), password=os.getenv("PASS"), database=os.getenv("DATABASE"),
                           host=os.getenv("HOST"), port=os.getenv("PORT"))
 
